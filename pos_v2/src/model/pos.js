@@ -6,13 +6,13 @@ function Pos(scanner) {
 }
 
 Pos.prototype.getExpectText = function (cartItems) {
-    var sum = 0;
-    var save = 0;
-    var expectText = "***<没钱赚商店>购物清单***\n";
-    var goodsText = "";
-    var giftText = "";
-    for (var i = 0; i < cartItems.length; i++) {
-        var cartItem = cartItems[i];
+    let sum = 0;
+    let save = 0;
+    let expectText = "***<没钱赚商店>购物清单***\n";
+    let goodsText = "";
+    let giftText = "";
+    for (let i = 0; i < cartItems.length; i++) {
+        let cartItem = cartItems[i];
         goodsText += "名称：" + cartItem.item.name + "，数量：" + cartItem.itemNumber
             + cartItem.item.unit + "，单价：" + (cartItem.item.price).toFixed(2) + "(元)，小计：" +
             ((cartItem.getSubtotal())).toFixed(2) + "(元)\n";

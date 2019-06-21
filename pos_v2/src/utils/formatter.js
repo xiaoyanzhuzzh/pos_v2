@@ -1,8 +1,8 @@
-var Utils = Utils || {};
+let Utils = {};
 
 Utils.formatter = {
     formatDateTime: function (inputDate) {
-        var year = this.dateDigitToString(inputDate.getFullYear()),
+        let year = this.dateDigitToString(inputDate.getFullYear()),
             month = this.dateDigitToString(inputDate.getMonth() + 1),
             date = this.dateDigitToString(inputDate.getDate()),
             hour = this.dateDigitToString(inputDate.getHours()),

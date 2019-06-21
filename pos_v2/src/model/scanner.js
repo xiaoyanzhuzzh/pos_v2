@@ -3,14 +3,14 @@ function Scanner(inputs) {
 }
 
 Scanner.prototype.getBarcodes = function () {
-    var barcodes = [];
-    for (var i = 0; i < this.inputs.length; i++) {
-        var barcodeArray = this.inputs[i].split('-');
+    let barcodes = [];
+    for (let i = 0; i < this.inputs.length; i++) {
+        let barcodeArray = this.inputs[i].split('-');
 
-        var barcode = barcodeArray[0];
-        var count = parseFloat(barcodeArray[1]) || 1;
+        let barcode = barcodeArray[0];
+        let count = parseFloat(barcodeArray[1]) || 1;
 
-        for (var x = 0; x < count; x++) {
+        for (let x = 0; x < count; x++) {
             barcodes.push(barcode);
         }
     }
